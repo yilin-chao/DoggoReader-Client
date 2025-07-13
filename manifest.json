@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "DoggoReader",
+  "version": "1.0",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "description": "Summarizes the content of the current website you are on. Great for summarizing long and complex articles.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_popup_size": {
+      "width": 800,
+      "height": 600
+    }
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmE+lJjyNAsOF3upgvk3IgsRYcwafYegbU7HIH7QI2/3UXiokebbT0WQOUbjQADm8/rLsZkra1+SH7j/7IvlCot5SFNvjk+hJaGnN2HDKANMY1eOBxd/K4hcwHw+zYdwMaVlECwSwjHfDDIyqYqXTne83TI0+OKto+4+u1NZfsUMaOdaPblW/Ap33rDSB6qTyhD/Wo3PWkbnDQg2T+/FIXELeDPEgA1mep0yxi3DFN4YiAbXphuy4Mtn3TgP/MMJ7NW1jFN1uYroDu0xb+EqzMSqrid2fk1y3EShFzMjnYYHu3yxviVfxS7xXJxnt+YVLODcMarieLY+fr+iyBYGV2QIDAQAB"
+}
