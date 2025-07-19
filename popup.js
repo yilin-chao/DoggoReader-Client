@@ -9,7 +9,7 @@ function getApiUrl() {
   console.log("isDevelopment:", isDevelopment());
   return isDevelopment()
     ? "http://localhost:3000/summarize"
-    : "http://170.64.173.95/summarize";
+    : "http://170.64.173.95/summarize"; // use HTTP for now
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -77,7 +77,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             const summaryPrompt = `${pageText}`;
 
             try {
-              // Use HTTP for now
               const response = await fetch(getApiUrl(), {
                 method: "POST",
                 headers: {
